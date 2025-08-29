@@ -8,7 +8,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smile with your life Dude</title>
-  <link rel="stylesheet" href="come.css">
   <style>
     body {
       background-image: url(images/joe.png);
@@ -103,6 +102,39 @@
         text-shadow: -3px -1px 10px rgba#ffffff;
        
     }
+
+    .gallery-grid {
+    display: grid;
+    /*ใช้ grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*จำนวน columns และ -ขนาด*/
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.gallery-item {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(248, 248, 248, 0.5);
+    background-color: #00403075;
+
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.gallery-item:hover {
+    transform: scale(1.25);
+    /*ทำให้ภาพเล็กลงเมื่อใช้ ้hover*/
+}
+
+.gallery-item p {
+    margin: 10px;
+    color: black;
+}
   </style>
 </head>
 <body>
