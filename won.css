@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body class="bg-danger">
+
+    <div class="container">
+        <h1> How to train your dargon </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem aliquid quidem, omnis vitae voluptates nesciunt
+            magni veniam error dolore quo dolor, cupiditate minima. Nisi omnis nesciunt odio ea. Fugiat, voluptatem!</p>
+
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#cappuccinoModal">How to
+            How to know?</button>
+    </div>
+
+    <!-- โครงสร้าง Modal -->
+    <!-- class modal + fade ทำให้มีเอฟเฟกต์เลือนตอนแสดง -->
+    <div class="modal fade" id="cappuccinoModal" tabindex="-1" aria-labelledby="cappuccinoModalLabel"
+        aria-hidden="true">
+        <!-- modal-dialog จัดตำแหน่งและขนาด -->
+        <!-- modal-dialog-centered ทำให้ modal อยู่ตรงกลางหน้าจอ -->
+        <div class="modal-dialog modal-dialog-centered">
+            <!-- modal-content คือกล่องเนื้อหาของ modal -->
+            <div class="modal-content">
+
+                <!-- modal-header ส่วนหัวของ modal -->
+                <div class="modal-header">
+                    <!-- modal-title ชื่อเรื่องของ modal -->
+                    <h5 class="modal-title" id="cappuccinoModalLabel">How to train your dargon</h5>
+                    <!-- ปุ่มปิด modal -->
+                    <!-- data-bs-dismiss="modal" ทำให้กดแล้วปิด modal ได้ -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- modal-body เนื้อหาหลัก -->
+                <div class="modal-body">
+                    <!-- รูปภาพของ Cappuccino -->
+                    <!-- img-fluid ทำให้รูปปรับขนาดอัตโนมัติตามหน้าจอ -->
+                    <!-- rounded ทำให้มุมรูปโค้งมน -->
+                    <!-- mb-3 เพิ่ม margin ล่าง -->
+                    <img src="https://i.pinimg.com/originals/a0/93/92/a093929b921ac9638a5b194301ce9b55.gif"
+                        class="img-fluid rounded mb-3" alt="Cappuccino">
+
+                    <!-- ลิสต์ขั้นตอนการทำ -->
+                    <ol>
+                        <li>Brew a shot of espresso (about 30ml).</li>
+                        <li>Steam and froth 60–90ml of milk until creamy.</li>
+                        <li>Pour the milk over the espresso.</li>
+                        <li>Top with milk foam and sprinkle cocoa powder if desired.</li>
+                    </ol>
+
+                    <!-- ข้อแนะนำเพิ่มเติม -->
+                    <p class="mb-0"><strong>Tip:</strong> Use fresh coffee beans for the best flavor!</p>
+                </div>
+
+                <!-- modal-footer ส่วนล่างของ modal -->
+                <div class="modal-footer">
+                    <!-- ปุ่มปิด modal -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

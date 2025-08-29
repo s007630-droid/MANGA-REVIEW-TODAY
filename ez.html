@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile with your life Dude</title>
+  <link rel="stylesheet" href="come.css">
+  <style>
+    body {
+      background-image: url(images/joe.png);
+      background-color: #004030;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+    }
+    
+    h1{
+      color: #FFF9BD;
+      text-shadow: 1px 1px 20px #ffffff; 
+    }
+    b{
+      color: #DEE791;
+    }
+     p {
+      color: #DEE791;
+      background-color: #004030;
+      border-radius: 8px dashed;
+      text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.8);
+      border: 8px dashed #FFF9BD;
+
+    }
+
+     .navbar {
+      background-color: #004030;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .navbar ul { list-style: none; display: flex; margin: 0; padding: 0; }
+    .navbar ul li { margin: 0 15px; }
+    .navbar ul li a {
+      color: #DEE791; text-decoration: none; font-weight: bold;
+      padding: 8px 12px; border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .navbar ul li a:hover { background: rgba(255,255,255,0.6); color: #DEE791; }
+    .logo { color: #FFF9BD; font-weight: bold;
+          
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px; padding: 20px;
+    }
+    .gallery-item a {
+      display: block; text-decoration: none; color: white; font-weight: bold;
+      border: 3px solid #fff; border-radius: 12px; overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 300px;       /* ✅ ทำให้รูปสูงเท่ากัน */
+      object-fit: cover;   /* ครอบรูปให้เต็ม ไม่บิดเบี้ยว */
+      display: block;
+      border-bottom: 3px solid #fff;
+      border-radius: 8px 8px 0 0;
+    }
+    .gallery-item a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(255,255,255,0.4);
+    }
+    .gallery-item b { display: block; text-align: center; padding: 10px; }
+
+    /* Lightbox Popup */
+    .lightbox {
+      display: none; position: fixed; z-index: 1000;
+      left: 0; top: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8); justify-content: center; align-items: center;
+    }
+    .lightbox-content {
+      background: #fff; padding: 20px; border-radius: 12px;
+      max-width: 600px; text-align: center;
+    }
+    .lightbox-content img { max-width: 100%; border-radius: 8px; }
+    .lightbox-content p { color: #ffffff; margin-top: 10px; }
+    .close {
+      position: absolute; top: 20px; right: 30px;
+      font-size: 30px; font-weight: bold; color: white; cursor: pointer;
+    }
+    .desc-gachia   { color:  #DEE791; background-color: #004030; }
+    .desc-jujutsu  { color:  #DEE791; background-color: #004030; }
+    .desc-dandadan { color:  #DEE791; background-color: #004030; }
+    .desc-chainsaw { color: #DEE791; background-color: #004030; }
+
+    h1{
+      color: #DEE791;
+        text-shadow: -3px -1px 10px rgba#ffffff;
+       
+    }
+  </style>
+</head>
+<body>
+
+<body> 
+  <header>
+
+    <nav class="navbar">
+      <div class="logo"> 📖🔥📖MANGA & REVIEW TODAY📖🔥📖</div>
+      <ul>
+        <li><a href="index.html">Home </a> </li>
+        <li><a href="our story.html">Romance</a> </li>
+        <li><a href="comedy.html">Action</a></li>
+        <li><a href="ez.html">Comedy</a></li>
+        <li><a href="horror.html">Horror</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        
+      </ul>
+      <nav>
+  </header>
+
+  
+  <h1>🤣🤣COMEDY🤣🤣
+    <header></header>
+   
+      
+   
+    <p>
+      🙂อนิเมะแนว Comedy คืออนิเมะที่เน้นสร้างเสียงหัวเราะและความบันเทิงเป็นหลัก🤣 มักมีเนื้อหาที่ไม่ซับซ้อนและเต็มไปด้วยเรื่องราวชวนขำขัน 🤑ตัวละครมีเอกลักษณ์เฉพาะตัวและมักจะเผชิญสถานการณ์ที่เหนือจริงหรือบ้าบอ 🤪ทำให้เกิดมุกตลกทั้งจากคำพูดและท่าทาง เป็นแนวที่เหมาะสำหรับผู้ชมที่ต้องการความผ่อนคลายและคลายเครียดจากการดำเนินชีวิตประจำวัน
+    </p>
+    
+   
+   <!-- Gallery -->
+    <section>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <a href="#" onclick="openLightbox('images/ha1.jpg','อนิเมะที่ผสมผสานหลายแนว แต่ขึ้นชื่อเรื่องมุกตลกและล้อเลียนอนิเมะเรื่องอื่นๆ อย่างถึงพริกถึงขิง','desc-gachia')">
+          <img src="images/ha2.gif" alt="Gintama ">
+          <b>Gintama</b>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="#" onclick="openLightbox('images/qu.png','เป็นเรื่องเกี่ยวกับนักเรียนในโรงเรียนคุโรมาตี้ ซึ่งเป็นโรงเรียนเด็กเลวอันดับหนึ่งของญี่ปุ่นที่รวบรวมเหล่านักเลงเอาไว้มากมายหลายชนิด รวมทั้งยังมีเรื่องดราม่าลูกผู้ชายมากมายในโรงเรียน เนื้อหาภายในเล่มแบ่งออกเป็นตอนสั้นๆ โดยส่วนมากในแต่ละตอนจะมีเนื้อหาไม่ต่อเนื่องกัน โดยจะจบภายในตอน','desc-jujutsu')">
+          <img src="images/ku.jpg" alt="Kuromaty">
+          <b>Kuromaty</b>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="#" onclick="openLightbox('images/robo2.jpg','เป็นเรื่องราวในโลกอนาคตที่หุ่นยนต์เมดรับใช้หรือที่เรียกว่า ออเดอร์เมด กลายเป็นของใช้ประจำบ้าน เด็กชายธรรมดาอย่าง ไทระ บอนโดะ ฝันอยากมีหุ่นยนต์เมดของตัวเองบ้าง จึงขอร้องคุณแม่จนได้รับมา แต่แทนที่จะเป็นหุ่นยนต์เมดที่น่ารักสมบูรณ์แบบ เขากลับได้ โรโบโกะ หุ่นยนต์เมดที่ดูซุ่มซ่ามแต่แข็งแกร่งเกินคาด ทำให้ชีวิตประจำวันของเขาเปลี่ยนไปอย่างสิ้นเชิงและเต็มไปด้วยเรื่องราวสุดป่วน ','desc-dandadan')">
+          <img src="images/robo1.jpg" alt="Me & Roboco">
+          <b>Me & Roboco</b>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="#" onclick="openLightbox('images/saka2.jpg',' เรื่องราวของซากาโมโต้ นักเรียนม.ปลายผู้สมบูรณ์แบบที่ทำอะไรก็ดูเจ๋งไปหมด จนเพื่อนๆ พยายามจะกลั่นแกล้งแต่ก็ทำไม่เคยสำเร็จ ','desc-chainsaw')">
+          <img src="images/saka1.jpg" alt="Sakamoto Desu ga?">
+          <b>Sakamoto Desu ga?</b>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-desc"></p>
+    </div>
+  </div>
+
+  <script>
+    function openLightbox(imgSrc, description, cssClass) {
+      const lightbox = document.getElementById("lightbox");
+      const img = document.getElementById("lightbox-img");
+      const desc = document.getElementById("lightbox-desc");
+
+      lightbox.style.display = "flex";
+      img.src = imgSrc;
+      desc.innerText = description;
+
+      // ลบคลาสเดิมก่อน แล้วเพิ่มคลาสใหม่
+      desc.className = '';
+      if(cssClass) desc.classList.add(cssClass);
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
